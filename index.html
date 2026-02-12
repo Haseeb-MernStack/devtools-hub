@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevTools Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All-in-One Developer Toolbox built with HTML, CSS & JavaScript">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>DevTools Hub</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<div class="container">
+
+  <!-- Password Generator -->
+  <section class="card">
+    <h2>Password Generator</h2>
+    <input type="number" id="passLength" placeholder="Length (8-32)">
+    <button onclick="generatePassword()">Generate</button>
+    <input type="text" id="passwordOutput" readonly>
+  </section>
+
+  <!-- JSON Formatter -->
+  <section class="card">
+    <h2>JSON Formatter</h2>
+    <textarea id="jsonInput" placeholder="Paste JSON here..."></textarea>
+    <button onclick="formatJSON()">Format</button>
+    <textarea id="jsonOutput" placeholder="Formatted JSON"></textarea>
+  </section>
+
+  <!-- Base64 Encoder/Decoder -->
+  <section class="card">
+    <h2>Base64 Tool</h2>
+    <textarea id="baseInput" placeholder="Enter text..."></textarea>
+    <button onclick="encodeBase64()">Encode</button>
+    <button onclick="decodeBase64()">Decode</button>
+    <textarea id="baseOutput" placeholder="Result"></textarea>
+  </section>
+
+  <!-- UUID Generator -->
+  <section class="card">
+    <h2>UUID Generator</h2>
+    <button onclick="generateUUID()">Generate UUID</button>
+    <input type="text" id="uuidOutput" readonly>
+  </section>
+
+  <!-- Color Converter -->
+  <section class="card">
+    <h2>HEX to RGB</h2>
+    <input type="text" id="hexInput" placeholder="#ffffff">
+    <button onclick="convertColor()">Convert</button>
+    <p id="colorOutput"></p>
+  </section>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
